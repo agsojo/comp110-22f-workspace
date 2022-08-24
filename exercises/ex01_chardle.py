@@ -1,4 +1,4 @@
-"""EX01 - Chardle - A cute step towards Wordle"""
+"""EX01 - Chardle - A cute step towards Wordle!"""
 
 __author__ = "730577804"
 
@@ -39,4 +39,3 @@ if len(word) == 5:
 else:
     print("Error: Word must contain 5 characters")
     exit()
-
