@@ -10,10 +10,10 @@ print("Searching for " + one_character + " in " + five_word)
 if five_word[0] == one_character:
     print(one_character + " found at index 0")
 if five_word[1] == one_character:
-    print(one_character + " found at indext 1")
+    print(one_character + " found at index 1")
 if five_word[2] == one_character:
-    print(one_character + " found at indext 2")
+    print(one_character + " found at index 2")
 if five_word[3] == one_character:
-    print(one_character + " found at indext 3")
+    print(one_character + " found at index 3")
 if five_word[4] == one_character:
-    print(one_character + " found at indext 4")
+    print(one_character + " found at index 4")
