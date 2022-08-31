@@ -18,7 +18,7 @@ while i < len(secret_word):  # loop that compares the indices of the guessed wor
     else:
         guessed_char: bool = False  # variable to keep track of whether a guessed character appears anywhere else in the secret . Set to false becaus
         j: int = 0  # loop indexing variable
-        while guessed_char is not True and j < len(secret_word): # loop to check if the character appears anywhere else in the secret
+        while guessed_char is not True and j < len(secret_word):  # loop to check if the character appears anywhere else in the secret
             if user_guess[i] == secret_word[j]:  # checks if the guessed character, i, appears at different indices in the secret
                 guessed_char = True  # setting guessed_char to True will end the loop
             else:
