@@ -8,11 +8,11 @@ YELLOW_BOX: str = "\U0001F7E8"  # yellow box emoji
 
 
 def contains_char(search_word: str, search_char: str) -> bool:
-    """Returns True if search_char is contained in search_word and False if otherwise"""
+    """Returns True if search_char is contained in search_word and False if otherwise."""
     assert len(search_char) == 1  # returns error if search_char isn't 1 character
     i: int = 0  # loop indexing variable
-    while i < len(word_guess):  # loops through the indices of word_guess to determine if any match the search_char
-        if word_guess[i] == search_char:
+    while i < len(search_word):  # loops through the indices of word_guess to determine if any match the search_char
+        if search_word[i] == search_char:
             return True
         else:
             i += 1
@@ -36,7 +36,7 @@ def emojified(guess: str, secret: str) -> str:
 
 
 def input_guess(guess_length: int) -> str:
-    """Prompts user for a guess of a given length and returns the user's input if it matches the given length"""
+    """Prompts user for a guess of a given length and returns the user's input if it matches the given length."""
     user_input: str = input(f"Enter a {guess_length} character word: ")
     while len(user_input) != guess_length:  # loop that insists the user input a guess of proper length
         user_input = input(f"That wasn't {guess_length} chars! Try again: ")
@@ -53,7 +53,7 @@ def main() -> None:
         user_input: str = input_guess(len(secret_word))  # uses the input_guess function to prompt the user for a guess
         print(emojified(user_input, secret_word))  # uses the emojified function to print the comparative emoji string
         if user_input == secret_word:  # if user has won
-            print(f"You won in {k+1}/6 turns!") # winning message
+            print(f"You won in {k+1}/6 turns!")  # winning message
             user_win = True  # the variable changes after the user wins to end the loop
         else:
             k += 1
