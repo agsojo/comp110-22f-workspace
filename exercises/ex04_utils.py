@@ -4,7 +4,7 @@ __author__ = "730577804"
 
 
 def all(x: list[int], y: int) -> bool:
-    """Input a list and int to check if every element in list is equal to int"""
+    """Input a list and int to check if every element in list is equal to int."""
     if len(x) == 0:
         return False
     i: int = 0
@@ -13,12 +13,11 @@ def all(x: list[int], y: int) -> bool:
             i += 1
         else:
             return False
-    if i == len(x):
-        return True
+    return True
 
 
 def max(a: list[int]) -> int:
-    """Input a list and its max is output"""
+    """Input a list and its max is output."""
     if len(a) == 0:
         raise ValueError("max() arg is an empty List")
     i: int = 0
@@ -32,7 +31,7 @@ def max(a: list[int]) -> int:
 
 
 def is_equal(moo: list[int], woof: list[int]) -> bool:
-    """Compares the elements of two lists to determine if they are equal"""
+    """Compares the elements of two lists to determine if they are equal."""
     if len(moo) != len(woof):
         return False
     i: int = 0
