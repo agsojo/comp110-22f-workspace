@@ -23,9 +23,9 @@ def max(user_list: list[int]) -> int:
     i: int = 0
     b = user_list[i]  # variable that takes on the value of the max element of a list
     i += 1
-    while i < len(a):
-        if b <= a[i]:  # compares the most recent max value with the next element in the list
-            b = a[i]  # b takes on the value of the compared element if it is smaller
+    while i < len(user_list):
+        if b <= user_list[i]:  # compares the most recent max value with the next element in the list
+            b = user_list[i]  # b takes on the value of the compared element if it is smaller
         i += 1
     return b  # max value
 
