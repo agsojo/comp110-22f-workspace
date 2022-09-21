@@ -19,12 +19,12 @@ def concat(list_one: list[int], list_two: list[int]) -> list[int]:
     new_list: list[int] = []
     i: int = 0
     while i < len(list_one):
-        new_list[i] += list_one[i]
+        new_list.append(list_one[i])
         i += 1
     
     i = 0
     while i <len(list_two):
-        new_list[i+len(list_one)] += list_two[i]
+        new_list.append(list_two[i])
         i += 1
     
     return new_list
@@ -41,15 +41,15 @@ def sub(any_list: list[int], start: int, end: int) -> list[int]:
     if start < 0:
         i = 0
     if end > len(any_list):
-        j = len(any_list)
+        j = len(any_list) - 1
     if i == j:
         subset_list.append(any_list[i])
     elif i < j:
-        while i < j:
+        while i <= j:
             subset_list.append(any_list[i])
             i += 1
     else:
-        while j < i:
+        while j <= i:
             subset_list.append(any_list[i])
             i -= 1
     return subset_list
