@@ -23,7 +23,7 @@ def concat(list_one: list[int], list_two: list[int]) -> list[int]:
         i += 1
     
     i = 0
-    while i <len(list_two):
+    while i < len(list_two):
         new_list.append(list_two[i])
         i += 1
     
