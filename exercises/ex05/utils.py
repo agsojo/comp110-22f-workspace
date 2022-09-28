@@ -37,7 +37,7 @@ def sub(any_list: list[int], start: int, end: int) -> list[int]:
     
     i: int = start
     j: int = end - 1        
-    subset_list: list = []
+    subset_list: list[int] = []
     if start < 0:
         i = 0
     if end > len(any_list):
