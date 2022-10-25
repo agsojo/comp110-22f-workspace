@@ -1,8 +1,3 @@
-"""Dictionary related utility functions."""
-
-<<<<<<< HEAD
-__author__ = "730577804"
-
 from csv import DictReader
 
 
@@ -69,8 +64,3 @@ def concat(table_1: dict[str, list[str]], table_2: dict[str, list[str]]) -> dict
         else:
             result[key] = table_2[key]
     return result
-=======
-__author__ = ""
-
-# Define your functions below
->>>>>>> 5d8c105adc810c1820adc55e3089c090bd30a6c2
